@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Stay Form</title>
+    <link rel="stylesheet" href="../css/Bootstrap.css">
+    <style>
+        .d-center{
+            display: grid;
+            place-items: center;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center text-bg-info">Hotel-resident-form</h1>
+    <div class="d-center ">
+
+        <form  method="post" class="border border-3  p-5">
+            <div class="w-100">
+                <label for="name">Your Name:</label>
+            <input class="form-control w-100" type="text" id="name" name="name"  required>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="email">Your Email:</label>
+            <input class="form-control w-100" type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="w-100 my-1">
+            <label for="checkin_date">Check-in Date:</label>
+            <input class="form-control w-100 " type="date" id="checkin_date" name="checkin_date" required>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="checkout_date">Check-out Date:</label>
+            <input class="form-control w-100 " type="date" id="checkout_date" name="checkout_date" required>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="room_preference">Room Preference:</label>
+            <select name="room_preference" id="room_preference" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+        <div class="w-100 my-1">
+            <label for="special_requests">Special Requests:</label> <br>
+            <textarea id="special_requests" name="special_requests" rows="3" cols="30"></textarea>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="number_of_guests">Number of Guests:</label>
+            <input class="form-control w-100 " type="number" id="number_of_guests" name="number_of_guests" min="1" required>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="contact_number">Contact Number:</label>
+            <input class="form-control w-100 " type="tel" id="contact_number" name="contact_number" required>
+        </div>
+
+        <div class="w-100 my-1">
+            <label for="payment_method">Payment Method:</label>
+            <select name="payment_method" id="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="cash">Cash</option>
+            </select>
+        </div>
+
+        <button type="submit" class="w-100 btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
+</body>
+</html>
